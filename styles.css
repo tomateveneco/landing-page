@@ -1,0 +1,32 @@
+body {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.header, .title-web {
+    background-color: #1f2937;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 100;
+    justify-content: space-between;
+}
+
+
+ul {
+    display: flex;
+}
+
+
+.title-web {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
