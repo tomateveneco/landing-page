@@ -4,8 +4,46 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    margin: 0;
-    flex: 1;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: #3882f6;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: #e5e7eb;
+  
+}
+
+.buttons {
+    border: #3882f6;
+    font-family: Roboto, sans-serif;
+    border-radius: 8px;
+    background: #3882f6;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 70px;
+    margin-top: 10px;
+}
+
+.card-button {
+    border: white solid;
+    font-family: Roboto, sans-serif;
+    border-radius: 8px;
+    background: #3882f6;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 /* ================== Encabezado ================== */
@@ -13,7 +51,6 @@ body {
 .header, .landing {
     background-color: #1f2937;
     display: flex;
-    flex-wrap: wrap;
 
 }
 
@@ -21,37 +58,83 @@ body {
     justify-content: space-between;
     margin: 0;
     align-items: center;
+    color: #f9faf8;
+    font-size: 24px;
+    font-weight: 500;
+    padding-right: 320px;
+    padding-bottom: 0;
+    padding-top: 20px;
+
 }
+
+.logo {
+    padding-left: 320px;
+    margin: 0;
+}
+
+
 
 .links {
     display: flex;
     list-style: none;
+    font-size: 18px;
+    color: #e5e7eb;
+    font-weight: 300;
+    gap: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+
 }
 
 /* ================== Título ================== */
 
 .landing {
     display: flex;
-    flex-wrap: wrap;
     background-color: #1f2937;
     margin: 0;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    flex: 1;
-   
+    height: 400px;
+    flex-shrink: 0;
+    padding-right: 320px;
+
+
+
 }
 
 .title-web {
+    padding-left: 320px;
+
     display: flex;    
     flex-direction: column;
-    max-width: 200px;
- 
+    max-width: 400px;
+}
+
+.presentation {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.subtext {
+    font-size: 18px;
+    color: #e5e7eb;
+    font-weight: 300;
 }
 
 .image {
     background-color: grey;
-    width: 600px;
-    height: 300px;
+    width: 400px;
+    height: 200px;
 }
 
 /* ================== Sección de información ================== */
@@ -75,21 +158,27 @@ body {
 .info-cubes {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 40px;
 }
 
+.info-text {
+    font-size: 18px;
+    color: #1f2937;
+    font-weight: 300;
+}
+
 .cube-card {
-    align-items: center;
     text-align: center;
     flex-wrap: wrap;
-    max-width: 100px;
+    max-width: 150px;
 }
 
 .image-placeholder {
-    width: 100px;           
-    height: 100px;         
+    width: 150px;           
+    height: 150px;         
     background-color: white; 
-    border: 2px solid #007BFF;
+    border: 3px solid #007BFF;
     border-radius: 12px; 
 }
 
@@ -101,41 +190,74 @@ body {
 /* ================== Frase ================== */
 
 .quote {
-flex-direction: column;
-background-color: #e5e7eb;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    padding: 100px;
+    align-items: center;
+    display: flex;
+
 }
 
 .quote-text {
-    text-align: center;
+    text-align: left;
     font-style: italic;
     font-weight: 300;
     color: #1f2937;
     font-size: 36px;
+    width: 700px;
 }
 
 .quote-author {
     text-align: right;
+    width: 700px;
+    font-weight: 900;
+    font-size: 24px;
+    padding-top: 20px;
+    
 }
 
 /* ================== Llamada a acción ================== */
 
 .card-back {
-    margin: 50px;
+    margin: 55px;
     display: flex;
     background-color: #3882f6;
+    max-width: 600px;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-evenly;
+    padding: 40px;
+    border-radius: 8px;
+    align-self: center;
+    
 }
 
 .card-button {
     align-self: center;
 }
 
+.card-title {
+    color: #f9faf8;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.card-text {
+    font-size: 18px;
+    color: #e5e7eb;
+    font-weight: 300;
+}
+
 /* ================== Pie de página ================== */
 
 
 .footer {
+    display: flex;
     background-color: #1f2937;
-    text-align: center;
+    justify-content: center;
+    padding: 25px;
+    font-size: 18px;
+    color: #e5e7eb;
+    font-weight: 300;
 }
 
